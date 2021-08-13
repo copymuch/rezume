@@ -4,7 +4,7 @@ $(document).ready(function(){
 		if ($(this).scrollTop() ==  0){
 		} else {
 			if ($(this).scrollTop() > 100){
-				$('.about-title').addClass('scroll');
+				$('.about').addClass('scroll');
 		}
 		}
 	});
