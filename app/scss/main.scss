@@ -86,8 +86,6 @@ header {
 .header-nav {
 	background-color: #fff;
 	padding: 10px 0;
-	border:1px solid;
-	border-radius: 5px 5px 0 0;
 	ul {
 		
 	}
@@ -106,6 +104,12 @@ header {
 			}
 		}
 	}
+}
+
+.nav-fix {
+	position: fixed;
+	left: 0;
+	top: 0;
 }
 
 .about {
@@ -146,14 +150,21 @@ header {
 .skills {
 	margin: 100px 0;
 }
-.skills-content,.skills-bar,.skills-item {
+.skills-content,.skills-bar,.skills-item,.skills-inner {
 	display: flex;
+}
+
+.skills-inner {
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
 }
 .skills-item {
 	padding-top: 50px;
 }
 
 .skills-content {
+
 	ul {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -165,11 +176,11 @@ header {
 		align-items: center;
 		flex-wrap: wrap;
 		flex-direction: column;
-		border-radius: 5px;
-		padding-bottom:50px; 
+		border-radius: 2px;
+		padding-bottom: 50px;
 		transition: all 0.3s ease;
 		&:hover {
-			background-color: #3d2f63;
+			background-color: rgba(61,47,99,.9);
 			color: #fff;
 
 		}
