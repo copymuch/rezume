@@ -86,8 +86,12 @@ header {
 .header-nav {
 	background-color: #fff;
 	padding: 10px 0;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+	width: 100%;
+	z-index: 999;
 	ul {
-		
+		flex: 0 1 100%;
+		display: flex;
 	}
 	li {
 		margin-left:10px;
